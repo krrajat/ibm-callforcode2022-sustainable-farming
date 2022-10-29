@@ -6,7 +6,7 @@
         "url": "https://github.com/cornflourblue/angular-8-registration-login-example.git"
     },
     "scripts": {
-        "build": "ng serve",
+        "build": "ng build --target=production --aot=true",
         "start": "node server.js"
     },
     "license": "MIT",
