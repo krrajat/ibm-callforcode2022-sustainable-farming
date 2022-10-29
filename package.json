@@ -7,7 +7,7 @@
     },
     "scripts": {
         "ng": "ng",
-        "build": "ng build angular-8-registration-login-example --configuration production --aot",
+        "build": "ng build --configuration production --aot",
         "start": "node server.js"
     },
     "license": "MIT",
