@@ -8,7 +8,7 @@
     "scripts": {
         "build": "webpack --mode production",
         "start": "node server.js",
-        "heroku-postbuild": "ng build --prod"
+        "heroku-postbuild": "ng build --aot -prod"
     },
     "license": "MIT",
     "dependencies": {
