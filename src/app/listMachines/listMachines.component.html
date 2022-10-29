@@ -1,0 +1,16 @@
+﻿<div><h1>Machines available</h1>
+    <a routerLink="/addMachines" class="btn btn-link">Add Machine</a>
+    <table>
+<tr><th class="col-sm-3">Picture</th>
+<th class="col-sm-9">Details</th>
+</tr>
+        <tr *ngFor="let post of posts">
+<td class="col-sm-6"><img src={{post.picture_url}} height = 100% width = 100% alt="W3Schools.com">
+</td><td class="col-sm-6"><p><b>Equipment Id:</b> {{ post.equipment_id }}</p>
+            <p><b>Name:</b> {{ post.name }}</p>
+<p><b>Location:</b> {{ post.location }}</p>
+<p><b>Category:</b> {{ post.category_id }}</p>
+<p><b>Vendor:</b> {{ post.vendor_id }}</p></td>
+</tr>
+</table>
+</div>

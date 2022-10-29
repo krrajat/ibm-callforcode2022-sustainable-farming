@@ -1,0 +1,46 @@
+﻿<h2>Add Machine</h2>
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" formControlName="name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
+        <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+            <div *ngIf="f.name.errors.required">Name is required</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="picture_url">Picture URL</label>
+        <input type="text" formControlName="picture_url" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.picture_url.errors }" />
+        <div *ngIf="submitted && f.picture_url.errors" class="invalid-feedback">
+            <div *ngIf="f.picture_url.errors.required">Picture URL is required</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="location">Location</label>
+        <input type="text" formControlName="location" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.location.errors }" />
+        <div *ngIf="submitted && f.location.errors" class="invalid-feedback">
+            <div *ngIf="f.location.errors.required">Location is required</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="category_id">Category</label>
+        <input type="text" formControlName="category_id" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.category_id.errors }" />
+        <div *ngIf="submitted && f.category_id.errors" class="invalid-feedback">
+            <div *ngIf="f.category_id.errors.required">Category is required</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="vendor_id">Vendor</label>
+        <input type="text" formControlName="vendor_id" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.vendor_id.errors }" />
+        <div *ngIf="submitted && f.vendor_id.errors" class="invalid-feedback">
+            <div *ngIf="f.vendor_id.errors.required">Vendor is required</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <button [disabled]="loading" class="btn btn-primary">
+            <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+            Submit
+        </button>
+        <a routerLink="/listMachines" class="btn btn-link">Cancel</a>
+    </div>
+</form>
