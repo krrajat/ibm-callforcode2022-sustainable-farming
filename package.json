@@ -12,10 +12,10 @@
     },
     "license": "MIT",
     "dependencies": {
-        "@angular/cli": "^14.2.7",
+        "@angular/cli": "^8.0.0",
         "@angular/common": "^8.0.0",
         "@angular/compiler": "^8.0.0",
-        "@angular/compiler-cli": "^14.2.8",
+        "@angular/compiler-cli": "^8.0.0",
         "@angular/core": "^8.0.0",
         "@angular/forms": "^8.0.0",
         "@angular/platform-browser": "^8.0.0",
