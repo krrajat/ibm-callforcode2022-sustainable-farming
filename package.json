@@ -6,9 +6,8 @@
         "url": "https://github.com/cornflourblue/angular-8-registration-login-example.git"
     },
     "scripts": {
-        "build": "ng build",
-        "start": "node server.js",
-        "heroku-postbuild": "npm start"
+        "build": "webpack --mode production",
+        "start": "webpack-dev-server --mode development --open"
     },
     "license": "MIT",
     "dependencies": {
