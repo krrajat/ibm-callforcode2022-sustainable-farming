@@ -7,15 +7,15 @@
     },
     "scripts": {
         "ng": "ng",
-        "build": "ng build --aot -prod",
-        "start": "npm start"
+        "build": "ng build --configuration production --aot",
+        "start": "node server.js"
     },
     "license": "MIT",
     "dependencies": {
-        "@angular/cli": "^8.0.0",
+        "@angular/cli": "^14.2.7",
         "@angular/common": "^8.0.0",
         "@angular/compiler": "^8.0.0",
-        "@angular/compiler-cli": "^8.0.0",
+        "@angular/compiler-cli": "^14.2.8",
         "@angular/core": "^8.0.0",
         "@angular/forms": "^8.0.0",
         "@angular/platform-browser": "^8.0.0",

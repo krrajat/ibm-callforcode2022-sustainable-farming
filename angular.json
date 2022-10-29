@@ -6,7 +6,7 @@
 },
 "newProjectRoot": "src",
 "projects": {
-"ibm": {
+"angular-8-registration-login-example": {
 "root": "",
 "sourceRoot": "src",
 "projectType": "application",
