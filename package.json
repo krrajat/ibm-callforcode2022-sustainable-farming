@@ -8,7 +8,7 @@
     "scripts": {
         "build": "ng build",
         "start": "node server.js",
-        "heroku-postbuild": "ng build --configuration production"
+        "heroku-postbuild": "ng build ibm --configuration production"
     },
     "license": "MIT",
     "dependencies": {
