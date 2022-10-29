@@ -7,7 +7,8 @@
     },
     "scripts": {
         "build": "webpack --mode production",
-        "start": "node server.js"
+        "start": "node server.js",
+        "build-2": "pwd"
     },
     "license": "MIT",
     "dependencies": {
