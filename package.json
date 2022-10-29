@@ -7,7 +7,7 @@
     },
     "scripts": {
         "ng": "ng",
-        "build": "ng build",
+        "build": "ng build --prod",
         "start": "npm start"
     },
     "license": "MIT",
